@@ -9,10 +9,7 @@ Pieceowater Dev is all about creating innovative IT solutions and fostering a co
 ### How to Contribute
 
 👩‍💻 We welcome contributions from everyone! If you'd like to contribute to our projects, here's how you can get involved:
-- Fork the repository
-- Create a new branch
-- Make your changes
-- Submit a pull request for review
+- Checkout our [Wiki]([Contribution/Contribution-101.md](https://github.com/pieceowater-dev/.github/wiki)) 
 
 ### Languages
 [![Go](https://img.shields.io/badge/golang-black?style=for-the-badge&logo=go)](https://github.com/pieceowater)
