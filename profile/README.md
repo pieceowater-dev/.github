@@ -1,63 +1,62 @@
-## Welcome to Pieceowater Dev! 👋
+# pcwt
 
-Pieceowater Dev is all about creating innovative IT solutions and fostering a collaborative developer community. We're excited to have you here!
+*Engineering robust, modular, and scalable B2B SaaS infrastructure.*
 
-### About Us
+> ### engineering principles
+>
+> * **First-Principles Design**: *Lightweight, self-hosted, and robust microservices architecture* with minimal external bloat.
+> * **Tenant Isolation**: Strict data separation per namespace backed by lazy schema initialization.
+> * **Resilience**: Best-effort cross-service communications ensuring core operations never fail if secondary integrations experience downtime.
 
-🌟 At Pieceowater Dev, we are passionate about leveraging technology to solve complex problems. Our projects range from web development to mobile apps and beyond.
 
-### How to Contribute
 
-👩‍💻 We welcome contributions from everyone! If you'd like to contribute to our projects, here's how you can get involved:
-- Checkout our [Wiki](https://github.com/pieceowater-dev/.github/wiki) 
+## the [lota](https://lota.tools) ecosystem
 
-### Languages
-[![Go](https://img.shields.io/badge/golang-black?style=for-the-badge&logo=go)](https://github.com/pieceowater)
+**lota** is our flagship multi-tenant B2B SaaS ecosystem designed for high-load operations, retail, HoReCa, and service-driven businesses. Built with a *modular microservices architecture*, it provides complete isolation per tenant workspace while maintaining *seamless cross-service integration*.
 
-[![TypeScript](https://img.shields.io/badge/typescript-black?style=flat-square&logo=typescript)](https://github.com/pieceowater)
-[![Swift](https://img.shields.io/badge/swift-black?style=flat-square&logo=swift)](https://github.com/pieceowater)
-[![Python](https://img.shields.io/badge/python-black?style=flat-square&logo=python)](https://github.com/pieceowater)
+### core components
+* **Hub**: Platform core for unified authentication, multi-tenant namespace management, RBAC, invites, and operator console.
+* **Capital**: Financial and content engine for tariff plans, quota enforcement, subscription lifecycle, invoicing, and knowledge bases.
+<details>
+<summary><b>view ecosystem apps</b></summary>
 
-### Technologies
-[![gRPC](https://img.shields.io/badge/gRPC-black?style=for-the-badge&logo=google)]()
-[![gql](https://img.shields.io/badge/graphql-black?style=for-the-badge&logo=graphql)]()
+<br/>
 
-[![Docker](https://img.shields.io/badge/docker-black?style=for-the-badge&logo=docker)]()
-[![Kubernetes](https://img.shields.io/badge/kubernetes-black?style=for-the-badge&logo=kubernetes)]()
-[![Compose](https://img.shields.io/badge/Compose-black?style=for-the-badge&logo=docker)]()
+* <b>Atrace</b>: Attendance and payroll engine for shift patterns, geofenced check-ins, and route tracking.
+* <b>Contacts</b>: Centralized CRM and loyalty database for customer records, custom dynamic fields, and bonus systems.
+* <b>Menu / Orders</b>: Digital storefronts and order management with multi-branch catalogs, modifiers, and kitchen display boards.
+* <b>Issues</b>: Dispatch and task management featuring customizable Kanban boards, SLA escalations, and real-time tracking.
+* <b>Goods</b>: Inventory and POS system for multi-warehouse tracking, stock movements, and recipe-based ingredient auto-deduction.
+* <b>Plans</b>: Scheduling and online booking for calendar management, staff availability, and client booking portals.
+* <i>And etc, as we continue to develop and add new services to our ecosystem.</i>
 
-[![AWS](https://img.shields.io/badge/AWS-black?style=flat-square&logo=amazonwebservices)]()
-[![Terraform](https://img.shields.io/badge/terraform-black?style=flat-square&logo=terraform)]()
-[![Ansible](https://img.shields.io/badge/ansible-black?style=flat-square&logo=ansible)]()
+</details>
 
-[![Linux](https://img.shields.io/badge/linux-black?style=flat-square&logo=Linux)](https://github.com/pieceowater)
-[![macOS](https://img.shields.io/badge/macos-black?style=flat-square&logo=Apple)](https://github.com/pieceowater)
-[![iOS](https://img.shields.io/badge/ios-black?style=flat-square&logo=Apple)](https://github.com/pieceowater)
 
-<!--### Technologies & Frameworks
-[![Docker](https://img.shields.io/badge/docker-black?style=for-the-badge&logo=docker)]()
-[![Kubernetes](https://img.shields.io/badge/kubernetes-black?style=for-the-badge&logo=kubernetes)]()
-[![AWS](https://img.shields.io/badge/AWS-black?style=for-the-badge&logo=amazonwebservices)]()
-[![Terraform](https://img.shields.io/badge/terraform-black?style=for-the-badge&logo=terraform)]()
-[![Ansible](https://img.shields.io/badge/ansible-black?style=for-the-badge&logo=ansible)]()
-[![GIN](https://img.shields.io/badge/GIN-black?style=for-the-badge&logo=go)]()
-[![NestJS](https://img.shields.io/badge/NestJS-black?style=for-the-badge&logo=NestJS)]()
-[![Vue](https://img.shields.io/badge/Vue-black?style=for-the-badge&logo=Vue.JS)]()
-[![React](https://img.shields.io/badge/React-black?style=for-the-badge&logo=React)]() -->
+## microservices architecture and templates
 
-<!-- ### Languages
-[![GO](https://img.shields.io/badge/golang-black?style=for-the-badge&logo=go)]()
-[![TypScript](https://img.shields.io/badge/typescript-black?style=for-the-badge&logo=typescript)](https://github.com/pieceowater)
-[![Swift](https://img.shields.io/badge/swift-black?style=for-the-badge&logo=swift)](https://github.com/pieceowater)
-[![Kotlin](https://img.shields.io/badge/kotlin-black?style=for-the-badge&logo=kotlin)](https://github.com/pieceowater) -->
+We enforce *strict templates* for our microservices and etc, ensuring absolute consistency across code structure, contracts, server implementation, and API gateways. Every service follows strict separation patterns, independent storage per namespace, and resilient best-effort cross-service communications.
 
-<!-- [![CPP](https://img.shields.io/badge/cpp-black?style=for-the-badge&logo=cplusplus)](https://github.com/pieceowater) -->
-<!-- [![Python](https://img.shields.io/badge/python-black?style=for-the-badge&logo=python)](https://github.com/pieceowater) -->
-<!-- [![Bash](https://img.shields.io/badge/bash-black?style=for-the-badge&logo=gnu-bash&logoColor=white)](https://github.com/pieceowater) -->
-<!-- [![SQL](https://img.shields.io/badge/sql-black?style=for-the-badge&logo=postgresql)](https://github.com/pieceowater) -->
+### core architecture repositories & tooling
+To maintain this strict consistency, our ecosystem is built upon *standard reference templates*, *shared libraries*, and *automation pipelines*:
+* **[`.sample.proto`](https://github.com/pieceowater-dev/lotof.sample.proto)** — *Reference contract template repository defining standard gRPC and Protobuf schemas.*
+* **[`.sample.svc`](https://github.com/pieceowater-dev/lotof.sample.svc)** — *Reference business logic server template implementing core domain workflows.*
+* **[`.sample.gtw`](https://github.com/pieceowater-dev/lotof.sample.gtw)** — *Reference API gateway template acting as the single web entry point and routing layer.*
+* **[`.lib.gossiper`](https://github.com/pieceowater-dev/lotof.lib.gossiper)** — *Core internal shared library utilized across our microservices ecosystem.*
+* **[`.cloud.ci`](https://github.com/pieceowater-dev/lotof.cloud.ci)** — *Cloud CI/CD automation pipeline configurations and tooling for continuous delivery.*
 
-### Fun Facts
 
-🍕 Fun fact: Our team loves pizza parties to celebrate project milestones!
+<details>
+<summary><b>technology stack</b></summary>
 
-![Views](https://komarev.com/ghpvc/?username=pieceowater-dev&color=blue&style=flat)
+<br/>
+
+* **Languages & Protocols**: Go, TypeScript, gRPC, GraphQL
+* **Infrastructure & Deployment**: Docker, Kubernetes, Terraform, Ansible, AWS
+* **Environments**: Linux, macOS
+
+</details>
+
+
+### links & resources
+* *Explore our internal guidelines and architecture specs in the [Organization Wiki](https://github.com/pieceowater-dev/.github/wiki).*
